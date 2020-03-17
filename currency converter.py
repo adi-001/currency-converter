@@ -1,18 +1,20 @@
 # Currency Converter
-
+# To get your own api key, sign up for free @https://metals-api.com/
 import requests, json
 
-api_key = "ox4932x4j9wokz7c28k1rfln0blujv8e8v3h1lnxgm2syrrcxz4y6s4k7z33"
+api_key = "---Copy your api here---"
 
 base_url = "http://metals-api.com/api/"
-
 url = "http://metals-api.com/api/latest?access_key="+api_key
 
+# GET requests method to retrieve data from specified url
 response = requests.get(url)
 
+# Getting the retrieved data in json format
 x = response.json()
 
-'''response which we get in json format
+# To check what response did you get,  you can comment out this region and run below code
+'''
 for i in x:
     print(i)    
 for _ in x['rates']:
