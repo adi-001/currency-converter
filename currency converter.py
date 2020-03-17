@@ -16,10 +16,12 @@ x = response.json()
 # To check what response did you get,  you can comment out this region and run below code
 '''
 for i in x:
-    print(i)    
+    print(i) 
+ ## Displays all countries currency code   
 for _ in x['rates']:
-    print(_,end='\t')  '''
+    print(_,end='\t')   '''
 
+#Input 
 base_currency = str(input('\nWhat will be your base currency ?\nChoose from above currency code'))
 
 desired_currency_exchange = str(input('Desired Currency : '))
