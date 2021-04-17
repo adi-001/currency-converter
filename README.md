@@ -1,5 +1,5 @@
 # currency-converter
-Get real time foreign exchange rates (CLI)
+Get real time foreign exchange rates (Script)
                                        
 API used here :  https://metals-api.com/
   
